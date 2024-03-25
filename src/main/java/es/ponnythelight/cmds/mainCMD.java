@@ -61,7 +61,6 @@ public class mainCMD implements CommandExecutor {
                     en.stream().forEach(k -> {
                         if (k.getType().equals(EntityType.DROPPED_ITEM)) return;
                         if (k.getType().equals(EntityType.PLAYER)) return;
-                        if (k.getType().equals(EntityType.ITEM_FRAME)) return;
                         if (k.getType().equals(EntityType.UNKNOWN)) return;
                         if (k.getType().equals(EntityType.EXPERIENCE_ORB)) return;
 
@@ -103,7 +102,6 @@ public class mainCMD implements CommandExecutor {
 
                         en.stream().forEach(k -> {
                             if (k.getType().equals(EntityType.PLAYER)) return;
-                            if (k.getType().equals(EntityType.ITEM_FRAME)) return;
                             if (k.getType().equals(EntityType.UNKNOWN)) return;
                             if (k.getType().equals(EntityType.EXPERIENCE_ORB)) return;
 
